@@ -1,0 +1,29 @@
+
+
+Processing Reference Log File: FullElevatorTestCfg1.log
+Checking Test Log File: FullElevatorTestCfg1.log
+Capacity Check PASSED
+Floor Ticks Check PASSED
+Door Ticks Check PASSED
+Pass Per Tick Check PASSED
+Initial State Check PASSED
+Initial Floor Check PASSED
+Capacity Check PASSED
+Floor Ticks Check PASSED
+Door Ticks Check PASSED
+Pass Per Tick Check PASSED
+Initial State Check PASSED
+Initial Floor Check PASSED
+Checking Calls:
+All Calls Matched - PASS
+Checking States:
+All States Matched - PASS
+Checking Boards:
+All Boards Matched - PASS
+Checking Arrivals:
+All Arrivals Matched - PASS
+Checking Skips:
+All Skips Matched - PASS
+Checking GiveUps:
+All GiveUps Matched - PASS
+End of Simulation Check PASSED

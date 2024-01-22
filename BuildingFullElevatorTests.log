@@ -1,0 +1,31 @@
+
+> Configure project :
+java.srcDirs = [C:\Users\scott\ADEN_GRADERS\Grader-FullElevatorTests\elevatorsimulation-aden-tomi\src, C:\Users\scott\ADEN_GRADERS\Grader-FullElevatorTests\elevatorsimulation-aden-tomi\javafx, C:\Users\scott\ADEN_GRADERS\Grader-FullElevatorTests\elevatorsimulation-aden-tomi\main\java]
+resources.srcDirs = [C:\Users\scott\ADEN_GRADERS\Grader-FullElevatorTests\elevatorsimulation-aden-tomi\src]
+java.files = [Building.java, CallManager.java, Elevator.java, Floor.java, Passengers.java, BuildingFSMBasicTest.java, BuildingFSMCapTest.java, BuildingFSMGiveUpTest.java, BuildingFSMMv1FlrTest.java, BuildingFSMMvToFlrTest.java, BuildingFSMPolTest.java, BuildingFullElevatorTests.java, BuildingInteractiveTests.java, ElevatorSimController.java, ElevatorSimulation.java, ExecFullElevatorTests.java, GenericQueue.java, MyFileIO.java]
+allJava.files = [Building.java, CallManager.java, Elevator.java, Floor.java, Passengers.java, BuildingFSMBasicTest.java, BuildingFSMCapTest.java, BuildingFSMGiveUpTest.java, BuildingFSMMv1FlrTest.java, BuildingFSMMvToFlrTest.java, BuildingFSMPolTest.java, BuildingFullElevatorTests.java, BuildingInteractiveTests.java, ElevatorSimController.java, ElevatorSimulation.java, ExecFullElevatorTests.java, GenericQueue.java, MyFileIO.java]
+resources.files = []
+allSource.files = [Building.java, CallManager.java, Elevator.java, Floor.java, Passengers.java, BuildingFSMBasicTest.java, BuildingFSMCapTest.java, BuildingFSMGiveUpTest.java, BuildingFSMMv1FlrTest.java, BuildingFSMMvToFlrTest.java, BuildingFSMPolTest.java, BuildingFullElevatorTests.java, BuildingInteractiveTests.java, ElevatorSimController.java, ElevatorSimulation.java, ExecFullElevatorTests.java, GenericQueue.java, MyFileIO.java]
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+BuildingFullElevatorTests > testElevatorTestCfg1() FAILED
+    org.opentest4j.AssertionFailedError at BuildingFullElevatorTests.java:195
+
+BuildingFullElevatorTests > testElevatorTestCfg2() FAILED
+    org.opentest4j.AssertionFailedError at BuildingFullElevatorTests.java:214
+
+BuildingFullElevatorTests > testElevatorTestCfg3() FAILED
+    org.opentest4j.AssertionFailedError at BuildingFullElevatorTests.java:233
+
+> Task :test FAILED
+3 actionable tasks: 3 executed
+
+Gradle Time = 4

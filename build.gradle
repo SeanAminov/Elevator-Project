@@ -1,0 +1,67 @@
+plugins {
+	id 'java'
+	id 'jacoco'
+        id 'application'
+}
+
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testImplementation('org.junit.jupiter:junit-jupiter:5.6.0')
+	implementation('org.junit.jupiter:junit-jupiter:5.6.0')
+	implementation files('library/cmpElevator.jar')
+	testImplementation files('library/cmpElevator.jar')
+}
+
+jacoco {
+	toolVersion "0.8.6"
+	reportsDirectory = file("$buildDir/customJacocoReportDir")
+}
+
+test {
+	useJUnitPlatform()
+	testLogging {
+		events "passed", "skipped", "failed"
+	}
+        finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+	dependsOn test
+	reports {
+		xml.enabled false
+		csv.enabled true
+	}
+}
+
+sourceSets {
+   main {
+      java {
+        srcDirs=["src","javafx","main/java"]
+      }
+      resources {
+        srcDirs=["src"]
+      }
+   }
+   test {
+      java {
+        srcDirs=["src","javafx","test/java"]
+      }
+   }
+      
+task sourceSetProperties {
+  sourceSets {
+     main {
+       println "java.srcDirs = ${java.srcDirs}"
+       println "resources.srcDirs = ${resources.srcDirs}"
+       println "java.files = ${java.files.name}"
+       println "allJava.files = ${allJava.files.name}"
+       println "resources.files = ${resources.files.name}"
+       println "allSource.files = ${allSource.files.name}"
+    }
+  }
+}
+}
